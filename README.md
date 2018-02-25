@@ -22,7 +22,7 @@ vendor/
 Via Composer
 
 ``` bash
-$ composer require pxgamer/handbrake-php
+$ composer require burakboz/handbrake-php
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ $ composer require pxgamer/handbrake-php
 
 include 'vendor/autoload.php';
 
-use pxgamer\Handbrake as HB;
+use BurakBoz\Handbrake as HB;
 
 $Config = new HB\Config;
 

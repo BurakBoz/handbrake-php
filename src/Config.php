@@ -1,12 +1,16 @@
 <?php
 
-namespace pxgamer\Handbrake;
+namespace BurakBoz\Handbrake;
 
 /**
  * Class Config
  */
 class Config
 {
+    /**
+     * @var string
+     */
+    public $handBrakeBinary;
     /**
      * @var string
      */

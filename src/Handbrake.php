@@ -1,6 +1,6 @@
 <?php
 
-namespace pxgamer\Handbrake;
+namespace BurakBoz\Handbrake;
 
 /**
  * Class Handbrake
@@ -43,7 +43,14 @@ class Handbrake
      */
     private function generateCommand()
     {
-        $commandString = App::HANDBRAKE_CLI;
+        if(isset($this->config->handBrakeBinary))
+        {
+            $commandString = $this->config->handBrakeBinary;
+        }
+        else
+        {
+            $commandString = "HandbrakeCLI" . (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN' ? ".exe" : "");
+        }
 
         if (isset($this->config->input)) {
             $commandString .= ' -i "'.$this->config->input.'"';
