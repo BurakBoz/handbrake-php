@@ -1,7 +1,7 @@
 {
     "name": "burakboz/handbrake-php",
     "type": "library",
-    "description": "A PHP integration with the Handbrake CLI..",
+    "description": "A PHP integration with the Handbrake CLI...",
     "license": "MIT",
     "require": {
         "php": "^7.0"
